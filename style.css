@@ -1,0 +1,11 @@
+.player {
+    display: flex;
+}
+
+.head {
+    text-align: center;
+}
+
+h1 {
+    margin: auto;
+}
