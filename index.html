@@ -6,25 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="head" class="head">
+    <div>
         <h1>Rock paper Scissors</h1>
     </div>
 
     <div>
-        <h2 class="player">You</h2>
-        <h2 class="player">The computer</h2>
+        <h2 id="player" class="player">You</h2>
+        <h2 id="computer" class="computer">The computer</h2>
         <p id="p1">player score: 0</p>
 
         <p id="p2">computer score: 0</p>
+        <h3 id="head"></h3>
+
+        <Button onclick="guess(0)">Rock</Button>
+        <Button onclick="guess(1)">Paper</Button>
+        <Button onclick="guess(2)">Scissors</Button>
     </div>
 
 
-    <Button onclick="guess(0)">Rock</Button>
-    <Button onclick="guess(1)">Paper</Button>
-    <Button onclick="guess(2)">Scissors</Button>
+
 
     <script src="logic.js"></script>
 

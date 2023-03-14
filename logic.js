@@ -7,11 +7,12 @@ function computer() {
 
 function guess(guess) {
     computer();
+    window.document.getElementById("player").innerText = "Player chose " + choices[guess];
+    document.getElementById("computer").innerText = "computer chose " + choices[comp];
     if (choices[comp] == choices[guess]) {
-        {
-            document.getElementById("head").innerText = "it is a tie";
-        }
+        document.getElementById("head").innerText = "it is a tie";
     }
+
     else if ((choices[comp] == 'Rock' && choices[guess] == 'Paper') || (choices[comp] == 'Paper' && choices[guess] == 'Scissors') || (choices[comp] == 'Scissors' && choices[guess] == 'Rock')) {
         document.getElementById("head").innerText = "you win";
         playerScore++;
